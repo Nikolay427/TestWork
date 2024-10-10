@@ -1,0 +1,97 @@
+1.	Инкапсуляция – это принцип с помощью которого объединяются данные и методы в один класс, что позволяет скрыть устройство и работу класса перед пользователем и дает пользователю интерфейс с помощью которого он может выполнять свои задачи
+     Пример:
+	Public class BankAccount
+{
+private double balance; //Приватное поле
+	public BankAccount(double initialBalance)
+{
+		balance = initialBalance
+}
+//Метод для добавления средств на счет
+public void Deposit(double amount)
+{
+if(amount > 0);
+{
+	balance += amount;
+}
+}
+//Метод для получения текущего баланса
+public double GetBalance()
+{
+	return balance;
+}
+}
+
+Наследование – Это отношения между классами при котором новый класс наследует структуру и поведение от родительского класса (или классов), не теряя при этом своей самостоятельности.
+В программировании с помощью наследования создаются классы на основе других классов.
+     Пример:
+// Определим базовый класс "Животное"
+public class Animal {
+    public string Name { get; set; }
+    public void Eat() {
+        Console.WriteLine("Питание животного");
+    }
+}
+
+// Определим производный класс "Птица"
+public class Bird : Animal {
+    public void Fly() {
+        Console.WriteLine("Птица летит");
+    }
+}
+
+// Использование классов
+public static void Main(string[] args) {
+    Bird myBird = new Bird();
+    myBird.Name = "Попугай";
+    myBird.Eat(); // Унаследован от Animal
+    myBird.Fly(); // Определен в Bird
+}
+
+
+Полиморфизм – Принцип, позволяющий разным классам использовать один и тот же метод для взаимодействия, что позволяет упростить код.
+Пример:
+class Program
+{
+    // метод не принимает никаких параметров
+    public void greet()
+    {
+        Console.WriteLine("Привет");
+    }
+
+    // метод принимает один строковый параметр
+    public void greet(string name)
+    {
+        Console.WriteLine("Привет" + имя);
+    }
+
+    static void Main(string [] args)
+    {
+        Program p1 = new Program();
+        // вызывает метод без какого-либо аргумента
+        p1.greet();
+        // вызывает метод с аргументом
+        p1.greet("Tim");
+    }} 
+
+
+2.	После внесения ошибки я бы по новой запушил код без ошибки если это личный репозиторий. С другими репозиториями не работал.
+
+3.	
+using System;
+using System.Linq;
+namespace palindrome {
+  class Program {
+    public static bool checkPalindrome2(string mainString) {
+      return mainString.SequenceEqual(mainString.Reverse());
+    }
+    static void Main(string[] args) {
+      bool palindrome = checkPalindrome2("12321");
+      Console.WriteLine(palindrome);
+    }
+  }}
+
+4.	С It я познакомился когда пошел в колледж. 
+Это был Новосибирский колледж электроники и вычислительной техники. 
+Там я научился базовому web программированию(HTML, CSS, JavaScript), так же прошел обучение работы с sqlserver, учил язык C#, JAVA, C++, так же работал с Arduino и программировал на этой платформе. 
+После того как закончил колледж особо не занимался It
